@@ -261,7 +261,7 @@ body {
 
 .timeline__inner-container {
     position: relative;
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 40px 20px;
 }
@@ -298,6 +298,7 @@ body {
 .timeline__content {
   position: relative;
   left: 30px;
+  max-width: 200px;
 }
 
 .timeline__date {
@@ -310,11 +311,11 @@ body {
 }
 
 .timeline__item.right .timeline__content {
-  left: 60%;
+  left: 70%;
 }
 
 .timeline__item.left .timeline__content {
-  left: 20%;
+  left: 0%;
 }
 
 @media screen and (max-width: 576px) {
@@ -337,5 +338,21 @@ body {
 
     .not-visible {
         display: none;
+    }
+
+    .timeline__item.right .timeline__content {
+        left: 0%;
+    }
+
+    .timeline__inner-container{
+        padding: 40px 0px;
+    }
+
+    .timeline__inner-container::after {
+        left: 100%;
+    }
+
+    .timeline__item::after {
+        left: 100%;
     }
 }
