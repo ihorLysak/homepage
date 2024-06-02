@@ -318,6 +318,15 @@ body {
   left: 0%;
 }
 
+.hobbies__header,
+.songs__header,
+.media__header {
+    color: var(--secondary-text-color);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
 @media screen and (max-width: 576px) {
     .main-info,
     .contact_info_container {
